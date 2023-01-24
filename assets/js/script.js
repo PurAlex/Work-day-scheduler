@@ -2,7 +2,9 @@
 var dayDisplayEl = $('#currentDay');
 var hours = $('.time-block');
 var timeNow = parseInt(moment().format("HH"));
-
+var text = $('.description');
+var btnSave = $('.saveBtn');
+var hour = $('.hour');
 
 
 // Function to display the day of today
@@ -24,4 +26,24 @@ $.each(hours, function () {
     }
 });
 
-// When the button is clicked save to the local storage the user input
+var input = document.querySelector("textarea");
+var pTag = document.createElement("p");
+input.append(pTag);
+input.textContent = localStorage.getItem("value");
+
+
+btnSave.on("click", function () {
+
+    localStorage.setItem("value", input.value);
+
+})
+
+
+
+function display() {
+
+    input.textContent = localStorage.getItem("value");
+    console.log(localStorage.getItem("value"));
+
+}
+
