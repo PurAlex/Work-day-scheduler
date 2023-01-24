@@ -31,13 +31,14 @@ var pTag = document.createElement("p");
 input.append(pTag);
 input.textContent = localStorage.getItem("value");
 
+$.each(input, function () {
 
-btnSave.on("click", function () {
+    btnSave.on("click", function () {
 
-    localStorage.setItem("value", input.value);
+        localStorage.setItem("value", input.value);
 
+    })
 })
-
 
 
 function display() {

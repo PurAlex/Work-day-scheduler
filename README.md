@@ -8,6 +8,8 @@ This project is a work day scheduler. The user can write notes and the input wil
 
 ![Screenshot of the scheduler](/assets/screenshots/scheduler1.jpg)
 
+![Screenshot of the scheduler](/assets/screenshots/scheduler2.jpg)
+
 ## Installation
 
 N/A
